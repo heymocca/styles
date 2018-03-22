@@ -1,0 +1,168 @@
+/* Global */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* Color */
+.header__background--black {
+    background: #0e3a53;
+}
+
+
+/* heading */
+.heading-primary {
+    font-size: 7rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.heading-secondary {
+    font-size: 2.5rem;
+    color: #313435;
+    font-weight: 400;
+}
+
+.heading-tertiary {
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+/* header */
+header {
+    padding-top: 11rem;
+}
+
+.content-body__header {
+    text-align: left;
+    padding: 3rem 0 3rem 3rem;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.calculate__borrow-header {
+    background: #0e3a53;
+}
+
+.calculate__collapse-header {
+    display: inline-block;
+    float: right;
+}
+
+.calculate__borrow-info {
+    /* padding: 2rem 6rem; */
+    font-size: 1.5rem;
+}
+
+.calculate__radio-span {
+    font-size: 1.2rem;
+}
+
+.calculate__radio-span:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.fa {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: right;
+}
+
+.radio-btn-group {
+    line-height: 2rem;
+}
+
+.radio--orange {
+    background: orangered;
+}
+
+.radio--orange:hover {
+    background: #b89c4e;
+}
+
+.radio--orange {
+    background: #b89c4e;
+}
+
+.radio {
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 10rem;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    vertical-align: text-bottom;
+}
+
+.radio::after {
+    position: absolute;
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    left: .4rem;
+    top: .4rem;
+    background: #fff;
+    border-radius: 10rem;
+}
+
+.radio:checked {
+    transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.radio:checked::after {
+    transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  background:transparent;
+}
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .radio-btn-group {
+        margin-left: -2rem;
+    }
+    .calculate__radio-span:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
+
+
+
+
+/* end */
