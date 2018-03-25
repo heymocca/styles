@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: inherit;
 }
+a
+ {
+    text-decoration: none;
+}
 
 html {
     font-size: 62.5%;
@@ -15,6 +19,75 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.6rem;
 }
+
+.quote-p::before {
+    content: open-quote;
+}
+
+.quote-p::after {
+    content: close-quote;
+}
+
+.counters {
+    counter-reset: counter-name;
+}
+
+.section--primary {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section--primary::before {
+    counter-increment: counter-name;
+    content: counter(counter-name);
+    position: absolute;
+    left: -5rem;
+    background: #34c6d3;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #999;
+}
+
+
+.tooltips {
+    padding: .2rem .8rem;
+    background: #000;
+    border-radius: 10rem;
+    color: #fff;
+    position: relative;
+}
+
+.tooltips:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    background: #000;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    bottom: 0;
+    padding: .5rem 1rem;
+    transform: scale(0);
+    transition: all .2s ease-out;
+}
+
+a[data-tool-tip]:hover::after {
+    color: #fff;
+    transform: scale(1);
+    bottom: 100%;
+}
+
+
 
 .calculate__accordion {
     padding-left: 3rem;
@@ -42,6 +115,12 @@ body {
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
     margin-right: 3rem;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: all 2s ease-out;
+
 }
 
 .arrow-up {
