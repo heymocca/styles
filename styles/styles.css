@@ -112,25 +112,37 @@ a[data-tool-tip]:hover::after {
     display: block;
     width: 15px;
     height: 15px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    /* border-top: 2px solid #fff;
+    border-right: 2px solid #fff; */
     margin-right: 3rem;
     cursor: pointer;
+    transition: all .3s ease-out;
+    position: relative;
 }
 
-.arrow:hover {
-    transform: all 2s ease-out;
-
+.arrow::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg) skew(7deg, 7deg);
+    transition: all .3s ease-out;
 }
 
-.arrow-up {
+.arrow:hover::after {
+    transform: rotate(135deg);
+}
+
+/* .arrow-up {
     -webkit-transform: rotate(-45deg) skew(7deg, 7deg);
     transform: rotate(-45deg) skew(7deg, 7deg);
-}
+} */
 
 .arrow-down {
-    -webkit-transform: rotate(135deg) skew(7deg, 7deg);
-    transform: rotate(135deg) skew(7deg, 7deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .fa {
