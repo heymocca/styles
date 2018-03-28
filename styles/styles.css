@@ -275,7 +275,7 @@ a[data-tool-tip]:hover::after {
 .mobile__dropdown-menu {
     position: relative;
     perspective: 800px;
-    background: #eee;
+    /* background: #eee; */
     z-index: 999;
 }
 
