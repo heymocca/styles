@@ -62,4 +62,19 @@ $(document).ready(function() {
         });
      }(jQuery));
 
+
+// sticky navbar
+$(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 80;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('#nav').addClass('fixed');
+			 }
+			 else {
+				 $('#nav').removeClass('fixed');
+			 }
+		});
+	});
+
+
 });

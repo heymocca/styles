@@ -20,6 +20,88 @@ body {
     font-size: 1.6rem;
 }
 
+/* Sticky navigation */
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 7rem;
+    z-index: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#header__nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    background: #fff;
+}
+
+#header__nav-list--fixed-top {
+    text-align: center;
+}
+
+#header__nav-list--fixed-top li {
+    width: 20%;
+    display: inline-block;
+    padding: 3.7rem 1rem;
+    background: #eee;
+}
+
+#header__nav-list--fixed-top li a {
+    text-decoration: none;
+    /* background: red; */
+    padding: 2rem 3rem;
+    color: #757575;
+    text-transform: uppercase;
+}
+
+
+.logo {
+    top: 0;
+    left: 50%;
+    margin-left: -56px;
+    width: 112px;
+}
+
+
+section {
+    height: 100vh;
+}
+
+#section1 {
+    background: #43b29d;
+}
+
+#section1 p {
+    padding-top: 20rem;
+    text-align: center;
+}
+
+#section2 {
+	background: #efc94d;
+}
+
+#section3 {
+	background: #e1793d;
+}
+
+
+
 .quote-p::before {
     content: open-quote;
 }
@@ -86,7 +168,6 @@ a[data-tool-tip]:hover::after {
     transform: scale(1);
     bottom: 100%;
 }
-
 
 
 .calculate__accordion {
