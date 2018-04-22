@@ -54,27 +54,27 @@
 
 .radio {
     position: relative;
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 10rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     -webkit-appearance: none;
     -moz-appearance: none;
     vertical-align: text-bottom;
 }
 
 .radio--green {
-    background: #28a745;
+    border: 2px solid #28a745;
 }
 
 .radio::after {
     position: absolute;
     content: "";
-    width: 1.6rem;
-    height: 1.6rem;
-    left: .4rem;
-    top: .4rem;
+    width: 17px;
+    height: 17px;
+    left: 4px;
+    top: 4px;
     background: #fff;
-    border-radius: 10rem;
+    border-radius: 50%;
 }
 
 .radio:checked {
@@ -87,22 +87,26 @@
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    background: transparent;
+    /* background: transparent; */
+    background: #28a745;
+    left: 2px;
+    top: 2px;
 }
 
 .radio__text {
-    width: 100px;
+    width: 170px;
+    margin-left: 20px;
 }
 
 @media (min-width: 576px) {
     .radio-btn-group:first-child {
-        padding-right: 180px;
+        padding-right: 26px;
     }
 }
 
 @media (min-width: 576px) {
     .radio-btn-group:last-child {
-        padding-left: 180px;
+        padding-left: 26px;
     }
 }
 
