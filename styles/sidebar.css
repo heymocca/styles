@@ -26,7 +26,7 @@ label:focus {
   width: 240px;
   height: 100%;
   transform: translate3d(-240px, 0, 0);
-  transition: transform 0.35s;
+  transition: transform 1.35s;
 }
 .menu label.menu-toggle {
   position: absolute;
@@ -61,11 +61,15 @@ label:focus {
 
 /* hide navigation icon for sublabels */
 .menu .menu label.menu-toggle {
-  background: none;
+  background: red;
 }
 
 /* fade in checked menu */
 .menu-checkbox:checked + .menu {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu-back:checked + .menu {
   transform: translate3d(0, 0, 0);
 }
 
