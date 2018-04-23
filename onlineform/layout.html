@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/ofb1.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <header>
+        <div class="fixed-top">
+            <nav id="main-nav" class="fixed-top">
+                <div class="container-fluid align-items-center d-flex justify-content-between">
+                    <a class="page-header__logo-container" href="/"><img class="page-header__logo" src="/Images/heartland-bank-logo-white.svg" alt="Heartland Bank logo"></a>
+                    <div class="product-nav-dropdown__container d-none d-md-block">
+                        <a class="product-nav-dropdown js-product-nav-dropdown nav-link">Explore Products<span class="up-down-chevron"></span></a>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <ul class="navbar-nav top-nav d-none d-md-flex slide-nav-right">
+                            <li class="nav-item home-link">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about-us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://shareholders.heartland.co.nz/">Shareholders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/business-loans/contact-us">Contact</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="btn btn-lg btn-heartland  btn-login-apply  js-go-to-apply" interaction-fill="rgba(255,255,255,0.2)">Apply</a>
+                            </li>
+                        </ul>
+
+                        <a class="hide-until-scroll-far sticky-login-apply d-md-none btn btn-lg btn-heartland js-go-to-apply" interaction-fill="rgba(255,255,255,0.2)">Apply</a>
+
+
+
+                        <div class="js-hamburger-container hamburger-container d-md-none" onclick="openCloseMenuSlider(event);">
+                            <svg class="hamburger-container__burger-icon" focusable="false" viewBox="0 6 22 12" aria-hidden="true">
+                            <path class="hamburger-container__burger-icon" d="M3 18h15v-2H3v2zm0-5h15v-2H3v2zm0-7v2h15V6H3z"></path>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="product-nav-container hideable-menu js-hideable-menu d-none d-md-block">
+                <div class="product-nav navbar navbar-expand">
+                    <ul class="navbar-nav navbar-main ">
+                        <li class="nav-item-main dropdown nav-item-savings nav-item-main-behind">
+                            <a class="nav-link dropdown-toggle" id="savings-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/Images/Savings-Deposits_Icon_wht.svg" height="50"><br>Savings &amp; Deposits</a>
+                            <div class="dropdown-menu" aria-labelledby="savings-dropdown-button">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="sub-nav">
+                                            <li class="nav-item-heading">
+                                                <a href="/savings-and-deposits">
+                                                Savings &amp; Deposits </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-lg-3">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/boost-saver" class="nav-link">Boost Saver</a></li>
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/savings-account" class="nav-link">Savings Accounts</a></li>
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/term-deposits" class="nav-link">Term Deposits</a></li>
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/direct-call-account" class="nav-link">Direct Call</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/business-call-account" class="nav-link">Business Call</a></li>
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/PIE-fund" class="nav-link">PIE Funds</a></li>
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/existing-depositors" class="nav-link">Existing Depositors</a></li>
+                                            <li class="nav-subitem"><a href="/savings-and-deposits/interest-rates" class="nav-link">Interest Rates</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 text-center d-none d-lg-block">
+                                        <div class="savings-top-rates__wrapper savings-top-rates__menu savings-top-rates--nav">
+                                            <div class="savings-top-rates__border">
+                                                <span>special<br> offer</span>
+                                            </div>
+                                            <div class="savings-top-rates d-flex flex-column justify-content-center">
+                                                <div class="savings-top-rates__rate-type">
+                                                    First receive
+                                                </div>
+                                                <div class="savings-top-rates__rate-container">
+                                                    <div class="savings-top-rates__rate faux-bold">
+                                                        3.25
+                                                    </div>
+                                                    <div class="savings-top-rates__rate-other">
+                                                        <div class="savings-top-rates__percentage">%</div>
+                                                        <div class="savings-top-rates__pa">p.a.</div>
+                                                    </div>
+                                                    <div>for 4 months. Interest paid on maturity.</div>
+                                                    <hr class="savings-top-rate__hr-line">
+                                                    <div class="savings-top-rate__continue">Then funds on call. Interest monthly.</div>
+                                                    <div class="savings-top-rates__period">
+                                                        Current rate at 3.00%<span class="small-asterisk">*</span> p.a.
+                                                    </div>
+                                                    <a href="/savings-and-deposits/boost-saver" class="btn btn-outline btn-outline--green btn-boostsaver-menu">Apply Now</a>
+
+                                                    <div class="savings-top-rates__bottom-title d-flex flex-column justify-content-center">Boost Saver</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="savings-top-rates__fine-print">* Rate subject to change.T&amp;Cs apply.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-main dropdown nav-item-reverse-mortgages nav-item-main-behind">
+                            <a class="nav-link dropdown-toggle" id="reverse-mortgages-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/Images/Reverse-Mortgages_Icon_wht.svg" height="50"><br>Reverse Mortgages</a>
+                            <div class="dropdown-menu" aria-labelledby="reverse-mortgages-dropdown-button">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <ul class="sub-nav">
+                                            <li class="nav-item-heading"><a target="_blank" href="https://www.seniorsfinance.co.nz">Reverse Mortgages</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-lg-4">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/" class="nav-link">Apply Online</a></li>
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/about-reverse-mortgages" class="nav-link">What is a Reverse Mortgage?</a></li>
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/#free-insights-guide" class="nav-link">Free Insights Guide</a></li>
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/reverse-mortgage-calculator" class="nav-link">Reverse Mortgage Calculator</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/customer-stories" class="nav-link">Customer Stories</a></li>
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/useful-info" class="nav-link">Useful Info</a></li>
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/news" class="nav-link">News</a></li>
+                                            <li class="nav-subitem"><a href="https://www.seniorsfinance.co.nz/Home/FAQs" class="nav-link">Common Questions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 text-center d-none d-lg-block menu-insights-cover">
+                                        <a href="https://www.seniorsfinance.co.nz/#free-insights-guide"><img class="reverse-mortgage-insights-guide-cover-image lazy" src="/Images/Nav/Reverse-mortgage_Nav-image.jpg" style=""></a>
+
+                                    </div>
+                                    <div class="col-md-2 d-none d-lg-block menu-insights">
+                                        <p>Get your FREE Reverse Mortgage Insights guide</p>
+                                        <p><a href="https://www.seniorsfinance.co.nz/#free-insights-guide" class="btn btn-heartland-findoutmore">Download</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-main dropdown nav-item-business nav-item-main-business--active">
+                            <a class="nav-link dropdown-toggle" id="business-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/Images/Business-Loans_Icon_wht.svg" height="50"><br>Business Loans</a>
+                            <div class="dropdown-menu" aria-labelledby="business-dropdown-button">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="sub-nav">
+                                            <li class="nav-item-heading"><a href="/business-loans"> Business Loans</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-lg-4">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="/business-loans/small-business-loans" class="nav-link">Small Business Loans</a></li>
+                                            <li class="nav-subitem"><a href="/business-loans/working-capital-loans" class="nav-link">Working Capital Loans</a></li>
+                                            <li class="nav-subitem"><a href="/business-loans/plant-and-equipment-loans" class="nav-link">Plant &amp; Equipment Loans</a></li>
+                                            <li class="nav-subitem"><a href="/business-loans/heavy-machinery-loans" class="nav-link">Heavy Machinery Loans</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="/business-loans/franchise-loans" class="nav-link">Franchise Loans</a></li>
+                                            <li class="nav-subitem"><a href="/business-loans/asset-finance" class="nav-link">Asset Finance</a></li>
+                                            <li class="nav-subitem"><a href="/business-loans/truck-and-trailer-loans" class="nav-link">Truck &amp; Trailer Loans</a></li>
+                                            <li class="nav-subitem"><a href="/business-loans#apply" class="nav-link">Loan Application</a></li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-5 d-none d-lg-block">
+                                        <div class="menu-business-feature__box">
+                                            <p class="menu-business-feature__text">Borrow from $5,000<br>to $250,000+</p>
+                                            <a class="btn btn-heartland-findoutmore" href="/business-loans">Find out more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item-main dropdown nav-item-rural nav-item-main-behind">
+                            <a class="nav-link dropdown-toggle" id="rural-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/Images/Nav/Livestock-Finance-Icon_wht.svg" height="50"><br>Rural Loans</a>
+                            <div class="dropdown-menu" aria-labelledby="rural-dropdown-button">
+                                <div class="row">
+                                    <div class="col-md-6 mr-lg-auto">
+                                        <ul class="sub-nav">
+                                            <li class="nav-item-heading"><a href="/rural-loans">Rural Loans</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-lg-4">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="/rural-loans/livestock-finance" class="nav-link">Livestock Finance</a></li>
+                                            <li class="nav-subitem"><a href="/rural-loans/capital-livestock-finance" class="nav-link">Capital Livestock Finance</a></li>
+                                            <li class="nav-subitem"><a href="/rural-loans/term-loans" class="nav-link">Term Loans</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <ul class="sub-nav">
+                                            <li class="nav-subitem"><a href="/rural-loans/farm-transition-loan" class="nav-link">Farm Transition Loan</a></li>
+                                            <li class="nav-subitem"><a href="/rural-loans/seasonal-finance" class="nav-link">Seasonal Finance</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 d-none d-lg-block">
+                                        <div class="menu-rural-feature__box">
+                                            <p class="menu-rural-feature__text">100% finance available<br>for store stock purchases</p>
+                                            <a class="btn btn-heartland-findoutmore" href="/rural-loans/livestock-finance">Find out more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <nav id="slider-menu" class="js-slider-menu">
+            <ul>
+                <li class="close-menu d-flex justify-content-end">
+
+                    <a class=" btn btn-lg btn-heartland  sticky-login-apply slider-menu__login-btn   js-go-to-apply" interaction-fill="rgba(255,255,255,0.2)">Apply</a>
+
+
+                    <div class="x-wrapper" onclick="closeMenuSlider(event)"><span></span></div>
+                </li>
+                <li><a href="/savings-and-deposits" class="slider-menu__section-item section-item--savings nav-item-main-behind">Savings &amp; Deposits<img src="/Images/Nav/savings-and-deposits-icon.svg"></a></li>
+                <li><a href="https://www.seniorsfinance.co.nz" target="_blank" class="slider-menu__section-item section-item--reverse-mortgage nav-item-main-behind">Reverse Mortgages<img src="/Images/Nav/reverse-mortgages-icon.svg"></a></li>
+                <li><a href="/business-loans" class="slider-menu__section-item section-item--business-loans nav-item-main-business--active">Business Loans<img src="/Images/Nav/business-loans-icon.svg"></a></li>
+
+                <li><a href="/rural-loans" class="slider-menu__section-item section-item--rural-loans nav-item-main-behind">Rural Loans<img src="/Images/Nav/Livestock-Finance-Icon_wht.svg"></a></li>
+                <li><a href="https://shareholders.heartland.co.nz/" target="_blank">Shareholders</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/business-loans/contact-us">Contact</a></li>
+                <li><a href="/about-us/history-of-heartland-bank">Our History</a></li>
+                <li><a href="/about-us/careers">Careers</a></li>
+                <li><a href="/about-us/sponsorship">Sponsorship</a></li>
+                <li><a href="/about-us/the-heartlander">The Heartlander</a></li>
+                <li class="slider-menu__last-item"><a href="/about-us/documents-and-forms">Documents &amp; Forms</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+
+
+    <div class="body-content">
+        <section id="business-loans-hero" class="dark-background">
+            <div class="business-loans-hero__container">
+                <div class="container o4b-online-form-container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-7 mx-auto">
+                            <h3 class="tertiary-heading mt-5">01. About my business</h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:25%"></div>
+                            </div>
+                            <p class="paragraph paragraph--blue mt-4">Your loan application should only take few minutes to complete and once submitted, we will be back in touch.</p>
+                            <form>
+                                <div class="form-group input-field__group mt-4">
+                                    <div class="field-control">
+                                        <label class="input-field__text validation--name">Business name: <span class="color--gray">If your business is registered, you may select it from the list.</span></label>
+                                        <!-- <input type="hidden" id="full_Business_Name" /> -->
+                                        <input type="text" class="form-control input-field" required />
+                                    </div>
+                                </div>
+                                <div class="form-group input-field__group mt-4">
+                                    <label for="" class="input-field__text validation--name color--dark-gray">Type of business</label>
+                                    <select class="form-control select-control" id="Industry" name="Industry" data-val="true" data-val-required="Please complete this field.">
+
+                                        <option value="" selected disabled>Select business type...</option>
+                                        <option selected="selected" value="Commercial Services">Commercial Services (e.g. automotive repairs and servicing; domestic or commercial cleaning)</option>
+
+                                        <option selected="selected" value="Transport and storage">Transport (e.g. courier and delivery services; road transport)</option>
+
+                                        <option value="Transport and storage">Transport (e.g. courier and delivery services; road transport)</option>
+
+                                        <option selected="selected" value="Other">Other</option>
+
+                                        <option value="Other">Other</option>
+
+
+                                    </select>
+                                    <div class="field-control other-business-field">
+                                        </div>
+                                </div>
+                                <div class="form-group input-field__group mt-4">
+                                    <label class="input-field__text">Email:</label>
+                                    <input type="text" class="form-control input-field" required />
+                                </div>
+                                <div class="form-group input-field__group mt-4">
+                                    <label class="input-field__text">Mobile number</label>
+                                    <input type="text" class="form-control input-field underline--gray font--gray background--light-gray" required />
+                                </div>
+                                <div id="noOfBusinessYears" class="mt-4">
+                                    <div id="yearsInBusiness" class="application__slider-row">
+                                        <div class="d-flex flex-column align-items-center flex-sm-row justify-content-between application__radio-container--hero">
+                                            <div class="rad d-flex flex-row align-items-center">
+                                                <input class="radio" type="radio" id="rbtnThisWeek" name="when_loan_required2" value="This week">
+                                                <div class="check"></div>
+                                                <label class="labelsRadio" for="rbtnThisWeek">this week</label>
+                                            </div>
+                                            <div class="rad d-flex flex-row align-items-center mt-4 mt-sm-0">
+                                                <input class="radio" type="radio" id="rbtnThisMonth" name="when_loan_required2" value="This month">
+                                                <div class="check"></div>
+                                                <label class="labelsRadio" for="rbtnThisMonth">this month</label>
+                                            </div>
+                                            <div class="rad d-flex flex-row align-items-center mt-4 mt-sm-0">
+                                                <input class="radio" type="radio" id="rbtnOverAMonth" name="when_loan_required2" value="1+ month">
+                                                <div class="check"></div>
+                                                <label class="labelsRadio" for="rbtnOverAMonth">1+ month</label>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                <div class="row mt-5 mb-5">
+                                    <div class="col-6 ml-auto">
+                                        <div class="form-group callback">
+                                            <button type="submit" class="btn btn-success btn-large arrow--right">Next Step</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="justify-content-center text-center mb-5 callback">
+                    <a href="href=tel:0800809191"><img src="../images/svg/Call Back Icon_Green.svg" class="callback__image" /><span class="callback__text">Request a Callback</span></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+
+</html>
